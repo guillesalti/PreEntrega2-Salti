@@ -1,0 +1,143 @@
+/*page variables*/
+@import "_variables";
+
+/*Reset css*/
+* {
+  margin: 0;
+  padding: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;700&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+}
+/*logo*/
+h1 {
+  margin-left: 12px;
+  font-size: 3rem;
+}
+ul {
+  color: $color-negro;
+}
+#subtitulo {
+  margin-top: auto;
+  margin-left: 12px;
+  font-size: 1.5rem;
+  color: $color-negro;
+}
+@media (max-width: 768px) {
+  .logo-web {
+    font-size: 2rem;
+  }
+  #subtitulo {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .logo-web {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .logo-web {
+    font-size: 1rem;
+  }
+  #subtitulo {
+    font-size: 0.7rem;
+  }
+}
+/*nav*/
+header {
+  background-color: white;
+  nav {
+    max-width: 100%;
+  }
+}
+.nav-item {
+  color: $color-negro;
+  font-weight: bold;
+  font-size: 1.3rem;
+  cursor: pointer;
+  @include flex-end;
+  transition: all 0.5s;
+  &:hover {
+    font-size: 1.4rem;
+    color: $color-negro;
+  }
+  @media (max-width: 768px) {
+    font-size: 1rem;
+    &:hover {
+      font-size: 0.9rem;
+    }
+  }
+}
+.navbar-collapse {
+  @include flex-end;
+}
+.card-home {
+  @include flex-evenly;
+  flex-direction: row;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+/*footer*/
+footer {
+  background-color: $color-negro;
+  padding: 30px;
+  margin-top: 100px;
+  @include flex-evenly;
+  a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+  }
+  a:hover {
+    font-size: 1.09rem;
+    transition: all 0.5s;
+  }
+  #instagram {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer a {
+    font-size: 0.8rem;
+    a:hover {
+      font-size: 0.9rem;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .footer a {
+    font-size: 0.7rem;
+    a:hover {
+      font-size: 0.8rem;
+    }
+  }
+}
+.titulo-seccion {
+  color: #ffffff;
+  background-color: rgba(8, 8, 8, 0.5);
+  font-size: 3rem;
+  padding: 5px;
+  position: absolute;
+  left: 50px;
+  top: 150px;
+}
+.icono-arriba {
+  font-size: 50px;
+  &:hover {
+    font-size: 59px;
+  }
+  @media (max-width: 768px) {
+    font-size: 40px;
+    &:hover {
+      font-size: 49px;
+    }
+  }
+}

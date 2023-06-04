@@ -1,0 +1,30 @@
+/*page variables*/
+@import "_variables";
+
+#img-preguntas {
+  background-image: url(../img/preguntas.jpg);
+  @include imagen-pincipal-pages;
+
+  @media (max-width: 768px) {
+    #img-preguntas {
+      height: 300px;
+    }
+  }
+  @media (max-width: 576px) {
+    #img-preguntas {
+      height: 200px;
+    }
+  }
+}
+#preguntas {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  p {
+    font-size: 1.1rem;
+  }
+}

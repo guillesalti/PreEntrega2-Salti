@@ -1,0 +1,73 @@
+/*page variables*/
+@import "_variables";
+
+#img-servicios {
+  background-image: url(../img/servicios-imagen.jpg);
+  @include imagen-pincipal-pages;
+}
+@media (max-width: 768px) {
+  #img-servicios {
+    height: 300px;
+  }
+}
+@media (max-width: 576px) {
+  #img-servicios {
+    height: 200px;
+  }
+}
+.contenedor-servicios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-servicios {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  background-color: antiquewhite;
+  margin-top: 30px;
+}
+.card-servicios img {
+  max-width: 300px;
+  border-radius: 10%;
+  height: 500px;
+  margin: 50px;
+}
+.card-servicios ul li {
+  font-size: 1.3rem;
+}
+.card-servicios p {
+  font-size: 1.3rem;
+}
+.card-servicios h3 {
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+@media (max-width: 768px) {
+  .card-servicios img {
+    height: 200px;
+  }
+  .card-servicios h3 {
+    font-size: 1.2rem;
+  }
+  .card-servicios ul li {
+    font-size: 1rem;
+  }
+  .card-servicios p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .card-servicios img {
+    height: 100px;
+  }
+  .card-servicios h3 {
+    font-size: 0.9rem;
+  }
+  .card-servicios ul li {
+    font-size: 0.8rem;
+  }
+  .card-servicios p {
+    font-size: 0.8rem;
+  }
+}

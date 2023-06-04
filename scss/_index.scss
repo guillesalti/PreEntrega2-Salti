@@ -1,0 +1,82 @@
+/*page variables*/
+@import "_variables";
+
+#img-home {
+  background-image: url(../img/home-img.jpg);
+  @include imagen-pincipal-pages;
+}
+@media (max-width: 768px) {
+  #img-home {
+    height: 300px;
+  }
+  .titulo-seccion {
+    font-size: 2.3rem;
+    top: 70px;
+  }
+}
+@media (max-width: 576px) {
+  #img-home {
+    height: 200px;
+  }
+  .titulo-seccion {
+    font-size: 1.9rem;
+    top: 40;
+  }
+}
+@media (max-width: 425px) {
+  .titulo-seccion {
+    font-size: 1.5rem;
+    top: 20;
+  }
+}
+.card-home div {
+  width: 280px;
+  display: inline-block;
+  transition: all 1s;
+  h3 {
+    text-align: center;
+    margin: 20px;
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  img {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 150%;
+    border: solid 5px rgba(215, 207, 252, 7);
+  }
+  img:hover {
+    width: 210px;
+    height: 210px;
+  }
+  @media (max-width: 768px) {
+    @include flex-column-center;
+
+    h3 {
+      font-size: 1.3rem;
+    }
+    img {
+      width: 150px;
+      height: 150px;
+    }
+    img:hover {
+      width: 160px;
+      height: 160px;
+    }
+  }
+  @media (max-width: 576px) {
+    h3 {
+      font-size: 1rem;
+    }
+    img {
+      width: 130px;
+      height: 130px;
+    }
+    img:hover {
+      width: 140px;
+      height: 140px;
+    }
+  }
+}

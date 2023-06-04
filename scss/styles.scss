@@ -1,0 +1,22 @@
+/*links a carpetas sass*/
+
+/*page variables*/
+@import "_variables";
+
+/*elementos comunes a todas las pages*/
+@import "_comunes";
+
+/*page home*/
+@import "_index";
+
+/*page servicios*/
+@import "_servicios";
+
+/*page nosotros*/
+@import "_nosotros";
+
+/*page preguntas*/
+@import "_preguntas";
+
+/*page contacto*/
+@import "_contacto";

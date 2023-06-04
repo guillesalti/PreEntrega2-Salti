@@ -1,0 +1,26 @@
+@mixin imagen-pincipal-pages {
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  margin-top: 70px;
+  margin-bottom: 0px;
+  max-width: 100%;
+  position: relative;
+}
+
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@mixin flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@mixin flex-evenly {
+  display: flex;
+  justify-content: space-evenly;
+}
+$color-negro: #070707;
+$formulario-color: rgb(250, 235, 255);
