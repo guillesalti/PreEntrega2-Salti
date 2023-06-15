@@ -51,34 +51,36 @@
     width: 210px;
     height: 210px;
   }
+
 }
 
 @media (max-width: 768px) {
     .card-home {
-      @include flex-column-center
-    }
-    .card-home h3 {
+      @include flex-column-center;
+    
+     div h3 {
       font-size: 1.3rem;
-    }
-    .card-home img {
+     }
+     div img {
       width: 150px;
       height: 150px;
     }
-    img:hover {
+     div img:hover {
       width: 160px;
       height: 160px;
     }
     }  
+  }
   @media (max-width: 576px) {
-    .card-home h3 {
+    .card-home div h3 {
       font-size: 1rem;
-    }
-    .card-home img {
+      div img {
       width: 130px;
       height: 130px;
-    }
-    .card-home img:hover {
+      }
+     div img:hover {
       width: 140px;
       height: 140px;
     }
   }
+}

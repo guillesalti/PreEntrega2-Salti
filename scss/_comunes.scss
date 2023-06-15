@@ -80,6 +80,36 @@ header {
   margin-top: 10rem;
   margin-bottom: 10rem;
 }
+/*descripcion*/
+.descripcion {
+  color: #ffffff;
+  background-color: rgba(8, 8, 8, 0.5);
+  font-size: 2.3rem;
+  padding: 5px;
+  position: absolute;
+  left: 50px;
+  top: 200px;
+  margin: auto;
+  margin-top: 19px;
+}
+@media (max-width: 768px) { 
+  .descripcion {
+    font-size: 1.3rem;
+    top: 110px;
+  }
+}
+@media (max-width: 576px) {
+  .descripcion {
+    font-size: 1rem;
+    top: 101px;
+  }
+}
+@media (max-width: 425px) {
+  .descripcion {
+    font-size: 0.8rem;
+    top: 95px;
+  }
+}
 /*footer*/
 footer {
   background-color: $color-negro;

@@ -94,6 +94,37 @@ header nav {
   margin-bottom: 10rem;
 }
 
+/*descripcion*/
+.descripcion {
+  color: #ffffff;
+  background-color: rgba(8, 8, 8, 0.5);
+  font-size: 2.3rem;
+  padding: 5px;
+  position: absolute;
+  left: 50px;
+  top: 200px;
+  margin: auto;
+  margin-top: 19px;
+}
+
+@media (max-width: 768px) {
+  .descripcion {
+    font-size: 1.3rem;
+    top: 110px;
+  }
+}
+@media (max-width: 576px) {
+  .descripcion {
+    font-size: 1rem;
+    top: 101px;
+  }
+}
+@media (max-width: 425px) {
+  .descripcion {
+    font-size: 0.8rem;
+    top: 95px;
+  }
+}
 /*footer*/
 footer {
   background-color: #070707;
@@ -220,6 +251,7 @@ footer #instagram {
   width: 210px;
   height: 210px;
 }
+
 @media (max-width: 768px) {
   .card-home {
     display: flex;
@@ -242,16 +274,15 @@ footer #instagram {
   .card-home div h3 {
     font-size: 1rem;
   }
-  .card-home div img {
+  .card-home div h3 div img {
     width: 130px;
     height: 130px;
   }
-  .card-home div img:hover {
+  .card-home div h3 div img:hover {
     width: 140px;
     height: 140px;
   }
 }
-
 /*page servicios*/
 /*page variables*/
 #img-servicios {
@@ -263,6 +294,7 @@ footer #instagram {
   margin-bottom: 0px;
   max-width: 100%;
   position: relative;
+  margin-bottom: 50px;
 }
 
 @media (max-width: 768px) {
@@ -286,32 +318,33 @@ footer #instagram {
   display: flex;
   align-items: center;
   background-color: antiquewhite;
-  margin-top: 30px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
-
 .card-servicios img {
   max-width: 300px;
   border-radius: 10%;
   height: 500px;
   margin: 50px;
 }
-
 .card-servicios ul li {
   font-size: 1.3rem;
 }
-
 .card-servicios p {
   font-size: 1.3rem;
 }
-
 .card-servicios h3 {
   font-weight: bolder;
   font-size: 1.5rem;
 }
 
 @media (max-width: 768px) {
+  .card-servicios {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
   .card-servicios img {
-    height: 200px;
+    height: 250px;
   }
   .card-servicios h3 {
     font-size: 1.2rem;
@@ -325,7 +358,7 @@ footer #instagram {
 }
 @media (max-width: 576px) {
   .card-servicios img {
-    height: 100px;
+    height: 150px;
   }
   .card-servicios h3 {
     font-size: 0.9rem;
@@ -350,43 +383,19 @@ footer #instagram {
   position: relative;
 }
 
-.descripcion {
-  color: #ffffff;
-  background-color: rgba(8, 8, 8, 0.5);
-  font-size: 2.5rem;
-  padding: 5px;
-  position: absolute;
-  left: 50px;
-  top: 200px;
-  margin: auto;
-  margin-top: 19px;
-}
-
 @media (max-width: 768px) {
   #img-nosotros {
     height: 300px;
-  }
-  .descripcion {
-    font-size: 1.3rem;
-    top: 110px;
   }
 }
 @media (max-width: 576px) {
   #img-nosotros {
     height: 200px;
   }
-  .descripcion {
-    font-size: 1rem;
-    top: 101px;
-  }
 }
 @media (max-width: 425px) {
   #img-nosotros {
     height: 190px;
-  }
-  .descripcion {
-    font-size: 0.8rem;
-    top: 95px;
   }
 }
 #yo {
@@ -661,6 +670,11 @@ textarea:focus {
     height: 20px;
     font-size: 0.7rem;
   }
+}
+
+#boton-formulario {
+  display: flex;
+  margin-left: 15px;
 }
 
 /*# sourceMappingURL=styles.css.map */

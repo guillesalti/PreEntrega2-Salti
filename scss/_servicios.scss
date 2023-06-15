@@ -4,6 +4,7 @@
 #img-servicios {
   background-image: url(../img/servicios-imagen.jpg);
   @include imagen-pincipal-pages;
+  margin-bottom: 50px;
 }
 @media (max-width: 768px) {
   #img-servicios {
@@ -25,41 +26,48 @@
   display: flex;
   align-items: center;
   background-color: antiquewhite;
-  margin-top: 30px;
-}
-.card-servicios img {
+  margin-top: 80px;
+  margin-bottom: 80px;
+ img {
   max-width: 300px;
   border-radius: 10%;
   height: 500px;
   margin: 50px;
 }
-.card-servicios ul li {
+
+ ul li {
   font-size: 1.3rem;
 }
-.card-servicios p {
+ p {
   font-size: 1.3rem;
 }
-.card-servicios h3 {
+ h3 {
   font-weight: bolder;
   font-size: 1.5rem;
 }
+}
 @media (max-width: 768px) {
-  .card-servicios img {
-    height: 200px;
+  .card-servicios {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  img {
+    height: 250px;
   }
-  .card-servicios h3 {
+   h3 {
     font-size: 1.2rem;
   }
-  .card-servicios ul li {
+   ul li {
     font-size: 1rem;
   }
-  .card-servicios p {
+  p {
     font-size: 1rem;
   }
 }
+}
+
 @media (max-width: 576px) {
   .card-servicios img {
-    height: 100px;
+    height: 150px;
   }
   .card-servicios h3 {
     font-size: 0.9rem;
